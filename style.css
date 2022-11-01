@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Home {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #262228;
+    background: url('https://img.freepik.com/premium-photo/colour-smoke-background_71163-197.jpg?w=740') center;
+    background-size: cover;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 1em 0;
+    margin: auto;
+}
+
+.logo {
+    color: #ffce00;
+    font-size: 1.1rem;
+    ;
+}
+
+.logo span {
+    color: #fcfcfc;
+}
+
+.navbar {
+    position: relative;
+    background-color: #fcfcfc;
+    width: 50vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+    padding-top: 2em;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    box-shadow: -10px 2px rgba(0, 0, 0, 0.534);
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 1em 0;
+}
+
+.navbar .btn {
+    margin: 1em 2.5em;
+
+}
+
+.navbar ul li a {
+    padding: 1.5em 2em;
+    text-decoration: none;
+    color: black;
+}
+
+svg.toggleBar {
+    height: 23px;
+    width: 20px;
+    cursor: pointer;
+}
+
+path {
+    stroke: white;
+    fill: white;
+}
+
+.imageSelf {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.imageSelf img {
+    border: 4px #b3012b double;
+    border-radius: 50%;
+}
+
+.nameSelf {
+    margin-top: 1.5em;
+    color: #fcfcfc;
+    text-align: center;
+}
+
+.nameSelf h1 {
+    font-size: 2.1rem;
+    font-family: 'Acme', sans-serif;
+}
+
+.nameSelf h1 span {
+    padding: 2.5px;
+    display: block;
+    color: #ffce00;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.para {
+    font-size: 0.8rem;
+    margin: 1.2em auto;
+    align-items: center;
+    width: 80%;
+    line-height: 1.5em;
+}
+
+button.btn {
+    margin-top: 0.5em;
+    background-color: #ffce00;
+    color: #222;
+    padding: .6em 2em;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button.btn:hover {
+    color: #b3012b;
+    background-color: #f7d343;
+    
+}
+@media screen and (min-width:1024px) {
+
+    .navbar {
+        position: relative;
+        background-color: #26222800;
+        width: 80vw;
+        height: 8vh;
+        display: inline-block;
+        position: absolute;
+        transition: 0.5s;
+        padding-top: 0em;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        box-shadow: 0 0 rgba(0, 0, 0, 0.0);
+        text-align: center;
+        top: 0;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .navbar .btn {
+        margin: 0em 0em;
+        margin-left: 8em;
+
+    }
+
+    .navbar ul li a {
+        padding: 0em 1em;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        position: relative;
+    }
+
+    .navbar ul li a::after {
+        content: '';
+        background-color: #b3012b;
+        height: 3px;
+        width: 0;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        transition: 0.5s;
+    }
+    .navbar ul li a:hover::after {
+        width: 65%;
+        transform: translateX(25%);
+        
+    }
+    svg.toggleBar {
+        left: 5px;
+        display: none;
+    }
+}
